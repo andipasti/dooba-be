@@ -1,0 +1,41 @@
+{
+  "name": "dooba-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "10.19.0",
+    "npm": "6.14.4"
+  },
+  "scripts": {
+    "start": "pm2-runtime start ecosystem.config.js --env production",
+    "dev": "nodemon -r esm index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/andipasti/dooba-be.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/andipasti/dooba-be/issues"
+  },
+  "homepage": "https://gitlab.com/andipasti/dooba-be#readme",
+  "dependencies": {
+    "axios-redmine": "^0.1.17",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-validator": "^6.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.9",
+    "nodemailer": "^6.7.0",
+    "pm2": "^5.1.2",
+    "swagger-ui-express": "^4.1.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
+  }
+}
