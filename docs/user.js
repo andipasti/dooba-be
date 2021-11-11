@@ -80,7 +80,7 @@ export default {
       }
     }
   },
-  "/api/user/issues": {
+  "/api/user/projects": {
     get: {
       parameters: [
         {
